@@ -1,0 +1,1965 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="396" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ViolationCodeSK" selected="True" />
+            <SelectField field="VIOLATION CODE" selected="True" />
+            <SelectField field="VIOLATION DESCRIPTION" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" type="V_WString" size="256" />
+            <SelectField field="DI_WorkflowDirectory" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="354" y="396" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ViolationCodeSK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="396" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="VIOLATION CODE" selected="True" />
+            <SelectField field="VIOLATION DESCRIPTION" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="672" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File FileFormat="23" RecordLimit="">aka:dadabi_azureSQL_class_gsrees|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,
+	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],
+	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,
+	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,
+	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,
+	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,
+	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,
+	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,
+	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,
+	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],
+	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],
+	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,
+	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],
+	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],
+	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,
+	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,
+	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],
+	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],
+	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],
+	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,
+	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,
+	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],
+	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],
+	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],
+	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,
+	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,
+	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],
+	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,
+	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,
+	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,
+	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,
+	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,
+	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt 
+from [dadabi-sql-db].nyc.stg_NYCRFI</File>
+          <FormatSpecificOptions>
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:dadabi_azureSQL_class_gsrees
+Query=select [dadabi-sql-db].nyc.s...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Int32" />
+            <Field name="CRITICAL FLAG" size="14" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="CAMIS" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Int32" />
+            <Field name="DBA" size="95" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="V_WString" />
+            <Field name="BORO" size="13" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="V_String" />
+            <Field name="BUILDING" size="10" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="V_WString" />
+            <Field name="STREET" size="40" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="V_String" />
+            <Field name="ZIPCODE" size="5" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="PHONE" size="12" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="CUISINE DESCRIPTION" size="30" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="V_String" />
+            <Field name="INSPECTION DATE" size="10" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="ACTION" size="130" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="V_String" />
+            <Field name="VIOLATION CODE" size="5" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="VIOLATION DESCRIPTION" size="254" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="V_WString" />
+            <Field name="SCORE" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Int16" />
+            <Field name="GRADE" size="1" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="RECORD DATE" size="10" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="GRADE DATE" size="10" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="V_String" />
+            <Field name="INSPECTION TYPE" size="59" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="V_String" />
+            <Field name="Latitude" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Double" />
+            <Field name="Longitude" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Double" />
+            <Field name="Community Board" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Int16" />
+            <Field name="Council District" size="2" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="Census Tract" size="6" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="BIN" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Int32" />
+            <Field name="BBL" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Int64" />
+            <Field name="Location Point" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Bool" />
+            <Field name="NTA" size="4" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="DI_CreateDate" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="DateTime" />
+            <Field name="DI_WorkflowFileName" size="64" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="String" />
+            <Field name="InspectionDate_Dt" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Date" />
+            <Field name="GradeDate_Dt" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Date" />
+            <Field name="RecordDate_Dt" source="File: odbc:DRIVER={SQL Server Native Client 11.0};UID=gsrees;PWD=__EncPwd1__;DATABASE=dadabi-sql-db;SERVER=dadabi-sql-server.database.windows.net|||select [dadabi-sql-db].nyc.stg_NYCRFI.RecordID,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CRITICAL FLAG],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.CAMIS,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DBA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BORO,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BUILDING,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.STREET,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ZIPCODE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.PHONE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[CUISINE DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.ACTION,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION CODE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[VIOLATION DESCRIPTION],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.SCORE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GRADE,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[RECORD DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[GRADE DATE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[INSPECTION TYPE],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Latitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.Longitude,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Community Board],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Council District],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Census Tract],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BIN,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.BBL,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.[Location Point],&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.NTA,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_CreateDate,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.DI_WorkflowFileName,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.InspectionDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.GradeDate_Dt,&#xA;	[dadabi-sql-db].nyc.stg_NYCRFI.RecordDate_Dt &#xA;from [dadabi-sql-db].nyc.stg_NYCRFI" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="450" y="396" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="'Alteryx_Datmigrate_int'" field="DI_WorkflowFileName" size="64" type="String" />
+            <FormulaField expression="'DataMigration'" field="DI_WorkflowDirectory" size="256" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = 'Alteryx_Datmigrate_int'
+DI_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="198" y="408" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="VIOLATION CODE" />
+            <Field field="VIOLATION DESCRIPTION" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="630" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\srees\AppData\Local\Temp\Engine_25764_36297c32594ab241b50006085974e217_\Engine_25764_77217a6a7183cc4990bab9d56c81932d~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ActionSK" selected="True" />
+            <SelectField field="ACTION" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" type="V_WString" size="256" />
+            <SelectField field="DI_WorkflowDirectory" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="354" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ActionSK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ACTION" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="InspectionTypeSK" selected="True" />
+            <SelectField field="INSPECTION TYPE" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" type="V_WString" size="256" />
+            <SelectField field="DI_WorkflowDirectory" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="353" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>InspectionTypeSK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="INSPECTION TYPE" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="GradeSK" selected="True" />
+            <SelectField field="GRADE" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" type="V_WString" size="256" />
+            <SelectField field="DI_WorkflowDirectory" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="354" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>GradeSK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="258" y="930" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="GRADE" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Critical_Flag_SK" selected="True" />
+            <SelectField field="CRITICAL FLAG" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" type="V_WString" size="256" />
+            <SelectField field="DI_WorkflowDirectory" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="354" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Critical_Flag_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="1062" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CRITICAL FLAG" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="558" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Address_SK" selected="True" />
+            <SelectField field="BORO" selected="True" />
+            <SelectField field="BUILDING" selected="True" />
+            <SelectField field="STREET" selected="True" />
+            <SelectField field="ZIPCODE" selected="True" />
+            <SelectField field="Latitude" selected="True" />
+            <SelectField field="Longitude" selected="True" />
+            <SelectField field="Community Board" selected="True" />
+            <SelectField field="Council District" selected="True" />
+            <SelectField field="Census Tract" selected="True" />
+            <SelectField field="BIN" selected="True" />
+            <SelectField field="BBL" selected="True" />
+            <SelectField field="NTA" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" type="V_WString" size="256" />
+            <SelectField field="DI_WorkflowDirectory" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="365" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Address_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BORO" selected="True" />
+            <SelectField field="BUILDING" selected="True" />
+            <SelectField field="STREET" selected="True" />
+            <SelectField field="ZIPCODE" selected="True" />
+            <SelectField field="Latitude" selected="True" type="Float" size="4" />
+            <SelectField field="Longitude" selected="True" type="Float" size="4" />
+            <SelectField field="Community Board" selected="True" />
+            <SelectField field="Council District" selected="True" />
+            <SelectField field="Census Tract" selected="True" type="V_String" size="254" />
+            <SelectField field="BIN" selected="True" />
+            <SelectField field="BBL" selected="True" />
+            <SelectField field="NTA" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="558" y="1446" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BORO_SK" selected="True" />
+            <SelectField field="BORO" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" type="V_WString" size="256" />
+            <SelectField field="DI_WorkflowDirectory" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="366" y="1446" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>BORO_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="1446" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BORO" selected="True" />
+            <SelectField field="Latitude" selected="False" type="Float" size="4" />
+            <SelectField field="Longitude" selected="False" type="Float" size="4" />
+            <SelectField field="Census Tract" selected="False" type="V_String" size="254" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="462" y="1446" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="'Alteryx_Datmigrate_int'" field="DI_WorkflowFileName" size="64" type="String" />
+            <FormulaField expression="'DataMigration'" field="DI_WorkflowDirectory" size="256" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = 'Alteryx_Datmigrate_int'
+DI_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="450" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="'Alteryx_Datmigrate_int'" field="DI_WorkflowFileName" size="64" type="String" />
+            <FormulaField expression="'DataMigration'" field="DI_WorkflowDirectory" size="256" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = 'Alteryx_Datmigrate_int'
+DI_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="462" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="'Alteryx_Datmigrate_int'" field="DI_WorkflowFileName" size="64" type="String" />
+            <FormulaField expression="'DataMigration'" field="DI_WorkflowDirectory" size="256" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = 'Alteryx_Datmigrate_int'
+DI_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="450" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="'Alteryx_Datmigrate_int'" field="DI_WorkflowFileName" size="64" type="String" />
+            <FormulaField expression="'DataMigration'" field="DI_WorkflowDirectory" size="256" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = 'Alteryx_Datmigrate_int'
+DI_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="450" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="'Alteryx_Datmigrate_int'" field="DI_WorkflowFileName" size="64" type="String" />
+            <FormulaField expression="'DataMigration'" field="DI_WorkflowDirectory" size="256" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = 'Alteryx_Datmigrate_int'
+DI_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="450" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="'Alteryx_Datmigrate_int'" field="DI_WorkflowFileName" size="64" type="String" />
+            <FormulaField expression="'DataMigration'" field="DI_WorkflowDirectory" size="256" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = 'Alteryx_Datmigrate_int'
+DI_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="197" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ACTION" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="198" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="INSPECTION TYPE" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="174" y="930" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="GRADE" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="186" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="CRITICAL FLAG" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="186" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="BORO" />
+            <Field field="BUILDING" />
+            <Field field="STREET" />
+            <Field field="BIN" />
+            <Field field="BBL" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="174" y="1470" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="BORO" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="738" y="942" width="156" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim_NYC_Inspection_Grade</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="726" y="1086" width="156" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim_NYC_Critical_Flag</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="762" y="1278" width="156" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim_NYC_Addresses</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="714" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:sql_server_local_nyc|||nyc.dbo.Dim_NYC_Inspection_Type</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Upsert</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="InspectionTypeSK" Dest="InspectionTypeSK" />
+                <Field Source="INSPECTION TYPE" Dest="INSPECTION_TYPE" />
+                <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                <Field Source="DI_WorkflowFileName" Dest="DI_WorkflowFileName" />
+                <Field Source="DI_WorkflowDirectory" Dest="DI_WorkflowDirectory" />
+              </AppendMapping>
+            </AppendMap>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:sql_server_local_nyc
+Query=nyc.dbo.Dim_NYC_Inspection_T...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="786" y="798" width="156" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim_NYC_Inspection_Type</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="714" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:sql_server_local_nyc|||nyc.dbo.Dim_NYC_Inspection_Grades</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Upsert</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="ByName" />
+            </AppendMap>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:sql_server_local_nyc
+Query=nyc.dbo.Dim_NYC_Inspection_G...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="714" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:sql_server_local_nyc|||nyc.dbo.Dim_NYC_Critical_Flag</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Upsert</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="Critical_Flag_SK" Dest="CRITICAL_FLAG_SK" />
+                <Field Source="CRITICAL FLAG" Dest="CRITICAL_FLAG" />
+                <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                <Field Source="DI_WorkflowFileName" Dest="DI_WorkflowFileName" />
+                <Field Source="DI_WorkflowDirectory" Dest="DI_WorkflowDirectory" />
+              </AppendMapping>
+            </AppendMap>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:sql_server_local_nyc
+Query=nyc.dbo.Dim_NYC_Critical_Fla...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="726" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:sql_server_local_nyc|||nyc.dbo.Dim_NYC_Addresses</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Upsert</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="Address_SK" Dest="AddressSK" />
+                <Field Source="BORO" Dest="BORO" />
+                <Field Source="BUILDING" Dest="BUILDING" />
+                <Field Source="STREET" Dest="STREET" />
+                <Field Source="ZIPCODE" Dest="ZIPCODE" />
+                <Field Source="Latitude" Dest="Latitude" />
+                <Field Source="Longitude" Dest="Longitude" />
+                <Field Source="Community Board" Dest="Community_Board" />
+                <Field Source="Council District" Dest="Council_District" />
+                <Field Source="Census Tract" Dest="Census_Tract" />
+                <Field Source="BIN" Dest="BIN" />
+                <Field Source="BBL" Dest="BBL" />
+                <Field Source="NTA" Dest="NTA" />
+                <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                <Field Source="DI_WorkflowFileName" Dest="DI_WorkflowFileName" />
+                <Field Source="DI_WorkflowDirectory" Dest="DI_WorkflowDirectory" />
+              </AppendMapping>
+            </AppendMap>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:sql_server_local_nyc
+Query=nyc.dbo.Dim_NYC_Addresses</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="714" y="1446" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:sql_server_local_nyc|||nyc.dbo.DIM_NYC_Borough</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Upsert</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="BORO_SK" Dest="BoroSK" />
+                <Field Source="BORO" Dest="BORO" />
+                <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                <Field Source="DI_WorkflowFileName" Dest="DI_WorkflowFileName" />
+                <Field Source="DI_WorkflowDirectory" Dest="DI_WorkflowDirectory" />
+              </AppendMapping>
+            </AppendMap>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:sql_server_local_nyc
+Query=nyc.dbo.DIM_NYC_Borough</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="786" y="1470" width="156" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim_NYC_Borough</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="762" y="642" width="180" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim_NYC_Inspection_Actions</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="725" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:sql_server_local_nyc|||nyc.dbo.Dim_NYC_Inspection_Actions</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Upsert</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="ByName" />
+            </AppendMap>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:sql_server_local_nyc
+Query=nyc.dbo.Dim_NYC_Inspection_A...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="558" y="61" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FoodPlacesSK" selected="True" />
+            <SelectField field="CAMIS" selected="True" />
+            <SelectField field="DBA" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" type="V_WString" size="256" />
+            <SelectField field="DI_WorkflowDirectory" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="366" y="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>FoodPlacesSK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CAMIS" selected="True" />
+            <SelectField field="DBA" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Cuisine_Description_SK" selected="True" />
+            <SelectField field="CUISINE DESCRIPTION" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" type="V_WString" size="256" />
+            <SelectField field="DI_WorkflowDirectory" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="354" y="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Cuisine_Description_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CUISINE DESCRIPTION" selected="True" />
+            <SelectField field="DI_CreateDate" selected="True" />
+            <SelectField field="DI_WorkflowFileName" selected="True" />
+            <SelectField field="DI_WorkflowDirectoryName" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="450" y="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="'Alteryx_Datmigrate_int'" field="DI_WorkflowFileName" size="64" type="String" />
+            <FormulaField expression="'DataMigration'" field="DI_WorkflowDirectory" size="256" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = 'Alteryx_Datmigrate_int'
+DI_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="462" y="61" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="'Alteryx_Datmigrate_int'" field="DI_WorkflowFileName" size="64" type="String" />
+            <FormulaField expression="'DataMigration'" field="DI_WorkflowDirectory" size="256" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = 'Alteryx_Datmigrate_int'
+DI_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="186" y="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="CAMIS" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="198" y="216" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="CUISINE DESCRIPTION" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="798" y="205" width="144" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim_NYC_Cuisine</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="726" y="193" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:sql_server_local_nyc|||nyc.dbo.Dim_NYC_Cuisine</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Upsert</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="Cuisine_Description_SK" Dest="CUISINE_DESCRIPTION_SK" />
+                <Field Source="CUISINE DESCRIPTION" Dest="CUISINE_DESCRIPTION" />
+                <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                <Field Source="DI_WorkflowFileName" Dest="DI_WorkflowFileName" />
+                <Field Source="DI_WorkflowDirectory" Dest="DI_WorkflowDirectory" />
+              </AppendMapping>
+            </AppendMap>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:sql_server_local_nyc
+Query=nyc.dbo.Dim_NYC_Cuisine</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="738" y="49" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:sql_server_local_nyc|||nyc.dbo.Dim_NYC_Food_Places</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Upsert</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="FoodPlacesSK" Dest="FoodPlacesSK" />
+                <Field Source="CAMIS" Dest="CAMIS" />
+                <Field Source="DBA" Dest="DBA" />
+                <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                <Field Source="DI_WorkflowFileName" Dest="DI_WorkflowFileName" />
+                <Field Source="DI_WorkflowDirectory" Dest="DI_WorkflowDirectory" />
+              </AppendMapping>
+            </AppendMap>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:sql_server_local_nyc
+Query=nyc.dbo.Dim_NYC_Food_Places</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="738" y="72" width="144" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim_NYC_Food_Places</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="822" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:sql_server_local_nyc|||nyc.dbo.Dim_NYC_Violation_Codes</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Upsert</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="ViolationCodeSK" Dest="ViolationCodeSK" />
+                <Field Source="VIOLATION CODE" Dest="VIOLATION_CODE" />
+                <Field Source="VIOLATION DESCRIPTION" Dest="VIOLATION_DESCRIPTION" />
+                <Field Source="DI_CreateDate" Dest="DI_CreateDate" />
+                <Field Source="DI_WorkflowFileName" Dest="DI_WorkflowFileName" />
+                <Field Source="DI_WorkflowDirectory" Dest="DI_WorkflowDirectory" />
+              </AppendMapping>
+            </AppendMap>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:sql_server_local_nyc
+Query=nyc.dbo.Dim_NYC_Violation_Co...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="894" y="462" width="156" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim_NYC_Violation_Codes</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Unique" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Unique" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Unique" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Unique" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Unique" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Unique" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Unique" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Unique" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Unique" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>NewyorkCityFI_DataMigration_DimensionalTable</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="b3eb62bd-6b85-447c-bb4b-00fa4f2f16ab" />
+      <Telemetry>
+        <PreviousWorkflowId value="796107ff-c971-4c83-98e0-46186c122d82" />
+        <OriginWorkflowId value="796107ff-c971-4c83-98e0-46186c122d82" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
